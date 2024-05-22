@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { FarcasterEmbed } from "react-farcaster-embed/dist/client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,98 +16,31 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{" "}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+            gap: "1rem",
+          }}
+        >
+          <FarcasterEmbed url="https://warpcast.com/kienfam/0x84016f26db8d35d647da718c5973458f9f49fe24" />
+          <FarcasterEmbed url="https://warpcast.com/linda/0xa8fc16d13e235ab164dabc24d75e24ae62eacc05" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0xce68f529" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0x234aa6ed" />
+          <FarcasterEmbed url="https://warpcast.com/builderszn/0xb488423d" />
+          <FarcasterEmbed username="dwr" hash="0x48d47343" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0xc672af1b" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0x67dd4c5d" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0x15f29fde" />
+          <FarcasterEmbed url="https://warpcast.com/dwr.eth/0xd0a48a4a" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0xf68b0f8a" />
+          <FarcasterEmbed url="https://warpcast.com/builderszn/0x679f3e08" />
+          <FarcasterEmbed url="https://warpcast.com/builderszn/0xb488423d" />
+          <FarcasterEmbed url="https://warpcast.com/ted/0x04120d52" />
+          <FarcasterEmbed url="https://warpcast.com/dwr.eth/0xd0a48a4a" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0x4294c797" />
+          <FarcasterEmbed url="https://warpcast.com/nonlinear.eth/0x40054241" />
+          <FarcasterEmbed url="https://warpcast.com/pugson/0x774f6ddc" />
         </div>
       </main>
     </>

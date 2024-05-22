@@ -1,0 +1,8 @@
+{
+  "version": "v1",
+  "packages": {
+    "react-farcaster-embed": {
+      "signature": "fe4d256c03aa3ed0ffbe8594b3428f3b"
+    }
+  }
+}
